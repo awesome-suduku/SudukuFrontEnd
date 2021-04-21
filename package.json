@@ -1,0 +1,59 @@
+{
+  "name": "HighSuduku",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "author": {
+    "name": "lax",
+    "email": "1546356935@qq.com"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve --report",
+    "build": "rm -rf dist && vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit --require tests/setup.js",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "docs": "vuese gen && vuese serve --open",
+    "lib": "vue-cli-service build --target lib --name tao --dest lib packages/index.js",
+    "up": "yarn && yarn upgrade"
+  },
+  "main": "packages/index.js",
+  "files": [
+    "packages",
+    "lib"
+  ],
+  "dependencies": {
+    "consola": "^2.15.0",
+    "vue": "3.0.7",
+    "vuex": "^4.0.0-rc.2",
+    "webpack-merge": "^5.1.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "^5.0.0-alpha.0",
+    "@vue/cli-plugin-unit-mocha": "^4.5.7",
+    "@vue/cli-service": "^4.5.6",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-rc.4",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.1.2",
+    "codemirror": "^5.58.2",
+    "compression-webpack-plugin": "^7.1.2",
+    "core-js": "^3.6.4",
+    "eslint": "^7.9.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^7.0.1",
+    "prettier": "^2.1.2",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "tao-vue-auto-router": "^1.0.0",
+    "tao-webpack-ali-oss": "^1.0.3",
+    "vant": "^3.0.0",
+    "vue-router": "^4.0.1",
+    "vue-tinypng-plugin": "^1.1.2",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "license": "MIT"
+}
